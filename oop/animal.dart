@@ -3,7 +3,11 @@ class Animal {
   int _age = 0;
   double _weight = 0;
 
-  Animal(this._name, this._age, this._weight);
+  Animal(String name, int age, double weight) {
+    this._name = name;
+    this._age = age;
+    this._weight = weight;
+  }
 
   set name(String value) {
     _name = value;
@@ -12,7 +16,6 @@ class Animal {
   double get weight => _weight;
   int get age => _age;
   String get name => _name;
-
 
   void eat() {
     print("$name is eating");
